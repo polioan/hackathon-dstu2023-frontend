@@ -1,0 +1,34 @@
+@use '../../styles/constans.scss';
+
+.table {
+  background-color: constans.$colors-white;
+  border-radius: 15px;
+  overflow: hidden;
+
+  max-width: 1000px;
+  width: 100%;
+  align-self: center;
+}
+
+.table th,
+.table td {
+  border-left: solid constans.$default-background 2px;
+  border-top: solid constans.$default-background 2px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.table th {
+  padding: constans.$default-font-size-half;
+  background-color: #f47c34;
+  border-top: none;
+}
+
+.table td:first-child,
+.table th:first-child {
+  border-left: none;
+}
+
+.table tr:hover {
+  background-color: constans.$colors-orange;
+}

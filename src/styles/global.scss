@@ -1,0 +1,12 @@
+@use '../styles/constans.scss';
+
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  background: constans.$default-background;
+  font-family: constans.$default-font-family;
+  font-size: constans.$default-font-size;
+  color: constans.$default-text-color;
+  font-weight: constans.$default-font-weight;
+  opacity: 0.95;
+}

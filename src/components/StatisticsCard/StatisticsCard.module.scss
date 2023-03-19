@@ -1,0 +1,36 @@
+@use '../../styles/constans.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: constans.$default-font-size;
+  flex-grow: 1;
+  background: #525354;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: constans.$default-font-size;
+
+  max-width: 1100px;
+  width: 100%;
+  align-self: center;
+}
+
+.sotrform {
+  display: flex;
+  gap: constans.$default-font-size-half;
+
+  span {
+    color: constans.$colors-orange;
+  }
+}
+
+.inputs {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: constans.$default-font-size-half;
+}
+
+.chart svg g g tspan {
+  fill: #f47c34;
+}

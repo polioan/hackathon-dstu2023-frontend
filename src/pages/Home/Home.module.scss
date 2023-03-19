@@ -1,0 +1,25 @@
+@use '../../styles/constans.scss';
+
+.container {
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: constans.$default-font-size;
+  padding-right: constans.$default-font-size;
+  padding-top: calc(constans.$default-font-size * 2.2);
+  gap: calc(constans.$default-font-size * 2.2);
+  padding-bottom: constans.$default-font-size-double;
+}
+
+.logo {
+  width: 18vw;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1300px) {
+  .logo {
+    position: fixed;
+    width: 70px;
+  }
+}
