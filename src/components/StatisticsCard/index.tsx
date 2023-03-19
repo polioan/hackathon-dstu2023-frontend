@@ -10,9 +10,7 @@ const devdata = [
   { month: '7-31', sales: 2 },
 ]
 
-const StatisticsCard: React.FC<{ data: IStatItem[] | undefined }> = ({
-  data,
-}) => {
+const StatisticsCard: React.FC<{ data: any }> = ({ data }) => {
   const pipedData = devdata ?? data
   return (
     <section className={cl.container}>
