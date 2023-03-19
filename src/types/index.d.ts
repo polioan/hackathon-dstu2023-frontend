@@ -1,8 +1,8 @@
 interface IStatItem {
-  id: number
-  name: string
+  tg_user_id: number
+  tg_user_name: string
   criteria: string
   plus_stat: number | string
   minus_stat: number
-  percent: number | string
+  work_percent: number | string
 }

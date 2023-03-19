@@ -24,11 +24,11 @@ const Table: React.FC<{ data: IStatItem[] | undefined }> = ({ data }) => {
       <tbody>
         {data?.map(value => {
           return (
-            <tr key={value.id}>
-              <td>{value.id++}</td>
-              <td>{value.name}</td>
+            <tr key={value.tg_user_id}>
+              <td>{value.tg_user_id++}</td>
+              <td>{value.tg_user_name}</td>
               <td>{value.criteria}</td>
-              <td>{toPercent(value.percent)}</td>
+              <td>{toPercent(value.work_percent)}</td>
             </tr>
           )
         })}

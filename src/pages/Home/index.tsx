@@ -17,6 +17,7 @@ const Home: React.FC = () => {
     <div className={cl.container}>
       <img src={Logo} alt='Axenix logo' className={cl.logo} />
       <Table data={data} />
+      {/* <Table data={data} /> */}
       <StatisticsCard data={data} />
     </div>
   )
