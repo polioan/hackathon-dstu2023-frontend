@@ -2,7 +2,7 @@
 
 .input {
   font-weight: constans.$default-font-weight-lighter;
-  background: #f6f6f6;
+  background: constans.$colors-white;
   border-radius: 39px;
   border: none;
   padding: calc(constans.$default-font-size-half / 2);

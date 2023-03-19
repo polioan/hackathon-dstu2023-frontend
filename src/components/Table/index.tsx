@@ -7,8 +7,7 @@ function toPercent(percent: string | number): string {
       : percent
   if (isNaN(percent) || percent > 1) return '?'
   if (percent === -1) return 'Оффлайн'
-  const resultPercent = Math.floor(percent * 100)
-  return `${resultPercent}%`
+  return `${Math.floor(percent * 100)}%`
 }
 
 const Table: React.FC<{ data: IStatItem[] | undefined }> = ({ data }) => {

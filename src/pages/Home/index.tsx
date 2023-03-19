@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   })
   return (
     <div className={cl.container}>
-      <img src={Logo} alt='' className={cl.logo} />
+      <img src={Logo} alt='Axenix logo' className={cl.logo} />
       <Table data={data} />
       <StatisticsCard data={data} />
     </div>
