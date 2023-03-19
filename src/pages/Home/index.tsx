@@ -13,13 +13,13 @@ const Home: React.FC = () => {
     },
     suspense: true,
   })
-  console.log(data)
   return (
     <div className={cl.container}>
       <img src={Logo} alt='Axenix logo' className={cl.logo} />
-      {data?.map((table, i) => (
-        <Table data={table} key={i} />
-      ))}
+      {data?.map((table, i) => {
+        if (table.length < 1) return null
+        return <Table data={table} key={i} />
+      })}
       <StatisticsCard data={data} />
     </div>
   )
